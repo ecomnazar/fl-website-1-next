@@ -4,7 +4,6 @@ import Clouds from "@/components/Clouds";
 import SecondSession from "@/components/SecondSesstion";
 import Text from "@/components/Text";
 import Image from "next/image";
-import Script from "next/script";
 import React from "react";
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
     <div>
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between py-8">
-          <img src="/images/logo.svg" />
+          <Image src="/images/logo.svg" width={170} height={100} alt={""} />
           <h4 className="text-xl font-[400]">Вход</h4>
         </nav>
       </div>
@@ -42,7 +41,7 @@ export default function Home() {
                 <Text title={"Реалистичный"} />
                 <p className="text-[18px] max-w-[250px]">Разговаривает как реальный человек: эмпатичный и дружелюбный</p>
               </div>
-              <img src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" />
+              <Image width={150} height={150} src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" alt="" />
             </div>
 
             {/*  */}
@@ -51,21 +50,21 @@ export default function Home() {
                 <Text title={"Поддерживает"} />
                 <p className="text-[18px] max-w-[250px]">Умеет разговаривать на любые темы, полностью конфиденциально</p>
               </div>
-              <img src="/images/icon-2.png" className="absolute bottom-0 right-0 z-[1]" />
+              <Image width={150} height={150} src="/images/icon-2.png" className="absolute bottom-0 right-0 z-[1]" alt="" />
             </div>
             <div className="hidden md:block rounded-xl overflow-hidden p-6 bg-gradient-to-br from-[#000000] to-primary relative">
               <div className="relative z-[10]">
                 <Text title={"Реалистичный"} />
                 <p className="text-[18px] max-w-[250px]">Разговаривает как реальный человек: эмпатичный и дружелюбный</p>
               </div>
-              <img src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" />
+              <Image width={130} height={130} src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" alt="" />
             </div>
             <div className="rounded-xl overflow-hidden p-6 bg-gradient-to-bl from-[#000000] to-primary relative">
               <div className="relative z-[10]">
                 <Text title={"Помогает"} />
                 <p className="text-[18px] max-w-[250px]">Подбирает нужную методику помощи, исходя из вашей ситуации</p>
               </div>
-              <img src="/images/icon-4.png" className="absolute top-0 right-0 z-[1]" />
+              <Image width={150} height={150} src="/images/icon-4.png" className="absolute top-0 right-0 z-[1]" alt="" />
             </div>
           </div>
           <Button title={"Начать"} className="mt-8 mb-6" />
@@ -83,12 +82,12 @@ export default function Home() {
                 Сеанс психотерапии проходит в формате вашего привычного общения с человеком.<br /><br />
                 Вы задаете тему, вопросы, общаетесь и получаете все необходимое: советы, эмоциональную поддержку, и ответы, которые помогут.
               </p>
-              <img src="/images/chat.svg" className="absolute bottom-5 right-5" />
+              <Image width={35} height={35} src="/images/chat.svg" className="absolute bottom-5 right-5" alt="" />
             </div>
             <SecondSession className="hidden md:block" />
           </div>
           <div className="flex justify-end">
-            <img src="/images/screenshot.png" className="mx-auto w-full md:w-fit" />
+            <Image width={340} height={50} alt="" src="/images/screenshot.png" className="mx-auto object-cover" />
           </div>
           <SecondSession className="block md:hidden" />
         </div>
@@ -138,19 +137,19 @@ export default function Home() {
               <p className="text-center text-[24px]">3500 руб <br /><span className="text-[16px]">средняя цена за 1 час</span></p>
               <div className="flex flex-col w-fit mx-auto mt-24 md:mt-12">
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/x-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/x-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Дорого</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/x-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/x-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Долго ждать запись</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/x-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/x-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Одна рабочая методика</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/x-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/x-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Шанс не понравиться друг другу</p>
                 </div>
               </div>
@@ -167,19 +166,19 @@ export default function Home() {
               <p className="text-center text-[24px]">390 руб <br /><span className="text-[16px]">Целый день</span></p>
               <div className="flex flex-col w-fit mx-auto mt-12">
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/tick-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/tick-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Бесплатная пробная сессия</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/tick-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/tick-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Круглосуточно</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/tick-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/tick-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Все методики</p>
                 </div>
                 <div className="flex items-center gap-x-8">
-                  <img src="/images/tick-icon.svg" className="w-[18px]" />
+                  <Image width={35} height={35} src="/images/tick-icon.svg" className="w-[18px]" alt="" />
                   <p className="max-w-[200px] text-[#000000] text-lg">Дружелюбный и отзывчивый</p>
                 </div>
               </div>
@@ -216,8 +215,8 @@ export default function Home() {
       <section className="container mx-auto px-4 py-8">
         <h2 className="text-[32px] font-[700] text-center mb-6">Мы вдохновляемся вашими отзывами!</h2>
         <div className="min-h-[250px] relative">
-          <img src="/images/bugday-right.svg" className="absolute z-[-1] top-1/2 -translate-y-1/2 right-0" />
-          <img src="/images/bugday-left.svg" className="absolute z-[-1] top-1/2 -translate-y-1/2 left-0" />
+          <Image width={50} height={50} alt="" src="/images/bugday-right.svg" className="absolute z-[-1] top-1/2 -translate-y-1/2 right-0" />
+          <Image width={50} height={50} alt="" src="/images/bugday-left.svg" className="absolute z-[-1] top-1/2 -translate-y-1/2 left-0" />
           <div className="h-full bg-[#ffffff] text-[#000000] w-[80%] mx-auto rounded-2xl p-4">
             <div className="flex items-start justify-between">
               <div>
@@ -227,7 +226,7 @@ export default function Home() {
               <div className="flex items-center  sm:gap-x-1">
                 {Array.from({ length: 6 }).map((_, i) => {
                   return (
-                    <img key={i} src="/images/star.svg" className="w-[20px]" />
+                    <Image width={50} height={50} alt="" key={i} src="/images/star.svg" className="w-[20px]" />
                   )
                 })}
               </div>
@@ -238,11 +237,11 @@ export default function Home() {
       </section>
 
       <section className="container mx-auto px-4 py-8">
-        <img src="/images/logo.svg" className="w-[250px] mx-auto mb-24" />
+        <Image width={170} height={100} src="/images/logo.svg" className="w-[250px] mx-auto mb-24" alt="" />
         <div className="grid grid-cols-1  md:grid-cols-3 gap-8">
           <div className="relative bg-[#000000] p-4 h-[300px] overflow-hidden flex flex-col items-center justify-center md:justify-start py-12 rounded-lg bg-gradient-to-br from-[#000000] via-[#232427] to-[#000000]">
             <div className="absolute -translate-x-1/2 -translate-y-1/2  top-0 left-0 rotate-[45deg] w-[150px] h-[150px] bg-primary flex items-center justify-end">
-              <img src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
+              <Image width={50} height={50} alt="" src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
             </div>
             <div className="flex items-center justify-center w-[70px] h-[70px] mx-auto border-2 border-primary rounded-full">
               3K
@@ -251,7 +250,7 @@ export default function Home() {
           </div>
           <div className="relative bg-[#000000] p-4 h-[300px] overflow-hidden flex flex-col items-center justify-center md:justify-start py-12 rounded-lg bg-gradient-to-br from-[#000000] via-[#232427] to-[#000000]">
             <div className="absolute -translate-x-1/2 -translate-y-1/2  top-0 left-0 rotate-[45deg] w-[150px] h-[150px] bg-primary flex items-center justify-end">
-              <img src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
+              <Image width={50} height={50} alt="" src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
             </div>
             <div className="flex items-center justify-center w-[70px] h-[70px] mx-auto border-2 border-primary rounded-full">
               1,4K
@@ -260,7 +259,7 @@ export default function Home() {
           </div>
           <div className="relative bg-[#000000] p-4 h-[300px] overflow-hidden flex flex-col items-center justify-center md:justify-start py-12 rounded-lg bg-gradient-to-br from-[#000000] via-[#232427] to-[#000000]">
             <div className="absolute -translate-x-1/2 -translate-y-1/2  top-0 left-0 rotate-[45deg] w-[150px] h-[150px] bg-primary flex items-center justify-end">
-              <img src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
+              <Image width={50} height={50} alt="" src="/images/energy-icon.svg" className="rotate-[135deg] -translate-x-1/2 w-[30px]" />
             </div>
             <div className="flex items-center justify-center w-[70px] h-[70px] mx-auto border-2 border-primary rounded-full">
               24
@@ -282,7 +281,7 @@ export default function Home() {
 
       <section className="container mx-auto px-4 py-8">
         <div className="h-[400px] bg-[#ffffff] rounded-xl flex items-center gap-x-8 relative p-4 overflow-hidden">
-          <img src="/images/update-section-image.svg" className="h-[80%] md:h-full absolute top-1/2 -translate-y-1/2 -translate-x-[70%] sm:-translate-x-[50%]" />
+          <Image fill alt="" src="/images/update-section-image.svg" className="h-[80%] md:h-full absolute top-1/2  -translate-x-[70%] sm:-translate-x-[50%]" />
           <div className="w-1/2 ml-auto mt-[-50px] sm:mr-[50px] lg:mr-[150px]">
             <Text title={"Новое обновление"} className="text-[#000000] mb-8" />
             <ul className="text-[#000000] flex flex-col gap-y-3 md:gap-y-8 text-[12px] sm:text-[18px] max-w-[600px]">
@@ -299,20 +298,20 @@ export default function Home() {
       <section className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="h-[100px] p-4 border border-[#ffffff]/20 rounded-xl flex items-start justify-between">
-            <p>Правовая информация</p>
-            <img src="/images/footer-icon-1.svg" className="" />
+            <p className="text-[14px]">Правовая информация</p>
+            <Image width={35} height={35} src="/images/footer-icon-1.svg" className="" alt="" />
           </div>
           <div className="h-[100px] p-4 border border-[#ffffff]/20 rounded-xl flex items-start justify-between">
-            <p>Политика конфиденциальности</p>
-            <img src="/images/footer-icon-2.svg" className="" />
+            <p className="text-[14px]">Политика конфиденциальности</p>
+            <Image width={35} height={35} src="/images/footer-icon-2.svg" className="" alt="" />
           </div>
           <div className="h-[100px] p-4 border border-[#ffffff]/20 rounded-xl flex items-start justify-between">
-            <p>Обратная связь</p>
-            <img src="/images/footer-icon-3.svg" className="" />
+            <p className="text-[14px]">Обратная связь</p>
+            <Image width={35} height={35} src="/images/footer-icon-3.svg" className="" alt="" />
           </div>
           <div className="h-[100px] p-4 border border-[#ffffff]/20 rounded-xl flex items-start justify-between">
-            <p>Соискателям & Инвесторам</p>
-            <img src="/images/footer-icon-4.svg" className="" />
+            <p className="text-[14px]">Соискателям & Инвесторам</p>
+            <Image width={35} height={35} src="/images/footer-icon-4.svg" className="" alt="" />
           </div>
         </div>
       </section>
@@ -321,9 +320,9 @@ export default function Home() {
 
       <footer className="container mx-auto px-4 py-8">
         <div className="flex items-center justify-center gap-x-4">
-          <a target="_blank" href="https://vk.com/seance.online"><img src="/images/vk-logo.svg" /></a>
-          <a target="_blank" href="https://t.me/seanceonline"><img src="/images/telegram-logo.svg" /></a>
-          <a href="#"><img src="/images/dzen-logo.svg" /></a>
+          <a target="_blank" href="https://vk.com/seance.online"><Image width={50} height={50} src="/images/vk-logo.svg" alt="" /></a>
+          <a target="_blank" href="https://t.me/seanceonline"><Image width={50} height={50} src="/images/telegram-logo.svg" alt="" /></a>
+          <a href="#"><Image width={50} height={50} src="/images/dzen-logo.svg" alt="" /></a>
         </div>
         <p className="text-center mt-8">Сеанс.online - все права защищены (с) 2024 г.</p>
       </footer>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Text from './Text';
+import Image from 'next/image';
 
 interface Props {
     className?: string;
@@ -15,7 +16,7 @@ const SecondSession: React.FC<Props> = ({ className }) => {
                 <p className="text-[14px] my-4">Мое самочувствие</p>
                 <h4 className="text-[13px]">14 февраля 24г.</h4>
             </div>
-            <img src="/images/like.svg" className="absolute bottom-5 right-5" />
+            <Image width={35} height={35} src="/images/like.svg" className="absolute bottom-5 right-5" alt='' />
         </div>
     )
 }
