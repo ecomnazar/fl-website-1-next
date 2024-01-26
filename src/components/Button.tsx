@@ -7,7 +7,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({ title, className }) => {
     return (
-        <button className={`block mx-auto text-2xl py-3 w-[200px] rounded-xl bg-primary ${className}`}>{title}</button>
+        <button className={`block mx-auto text-[20px] h-[50px] w-[185px] rounded-[12px] bg-primary ${className}`}>{title}</button>
     )
 }
 

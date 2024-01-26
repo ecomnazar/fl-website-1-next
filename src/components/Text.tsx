@@ -7,7 +7,7 @@ interface Props {
 
 const Text: React.FC<Props> = ({ title, className }) => {
     return (
-        <h2 className={`text-[24px] md:text-[32px] font-[700] ${className}`}>{title}</h2>
+        <h2 className={`text-[22px] md:text-[28px] font-[700] ${className}`}>{title}</h2>
     )
 }
 
