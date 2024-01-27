@@ -35,7 +35,7 @@ export default function Home() {
                 <Text title={"Общительный"} />
                 <p className="text-[12px] md:text-[14px] max-w-[250px]">Искусственный интеллект, применяющий практики психологии</p>
               </div>
-              <Image src="/images/icon-1.png" className="absolute bottom-0 right-0 z-[1]" width={180} height={180} alt={""} />
+              <Image src="/images/icon-1.png" className="absolute bottom-0 right-0" width={180} height={180} alt={""} />
             </div>
 
             {/*  */}
@@ -45,7 +45,7 @@ export default function Home() {
                 <Text title={"Реалистичный"} />
                 <p className="text-[12px] md:text-[14px] max-w-[250px]">Разговаривает как реальный человек: эмпатичный и дружелюбный</p>
               </div>
-              <Image width={150} height={150} src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" alt="" />
+              <Image width={150} height={150} src="/images/icon-3.png" className="absolute top-0 right-0" alt="" />
             </div>
 
             {/*  */}
@@ -54,21 +54,21 @@ export default function Home() {
                 <Text title={"Поддерживает"} />
                 <p className="text-[12px] md:text-[14px] max-w-[250px]">Умеет разговаривать на любые темы, полностью конфиденциально</p>
               </div>
-              <Image width={150} height={150} src="/images/icon-2.png" className="absolute bottom-0 right-0 z-[1]" alt="" />
+              <Image width={150} height={150} src="/images/icon-2.png" className="absolute bottom-0 right-0" alt="" />
             </div>
             <div className="hidden md:block rounded-xl overflow-hidden p-6 bg-gradient-to-br from-[#000000] to-primary relative">
               <div className="relative z-[10]">
                 <Text title={"Реалистичный"} />
                 <p className="text-[12px] md:text-[14px] max-w-[250px]">Разговаривает как реальный человек: эмпатичный и дружелюбный</p>
               </div>
-              <Image width={130} height={130} src="/images/icon-3.png" className="absolute top-0 right-0 z-[1]" alt="" />
+              <Image width={130} height={130} src="/images/icon-3.png" className="absolute top-0 right-0" alt="" />
             </div>
             <div className="rounded-xl overflow-hidden p-6 bg-gradient-to-bl from-[#000000] to-primary relative">
               <div className="relative z-[10]">
                 <Text title={"Помогает"} />
                 <p className="text-[12px] md:text-[14px] max-w-[250px]">Подбирает нужную методику помощи, исходя из вашей ситуации</p>
               </div>
-              <Image width={150} height={150} src="/images/icon-4.png" className="absolute top-0 right-0 z-[1]" alt="" />
+              <Image width={150} height={150} src="/images/icon-4.png" className="absolute top-0 right-0" alt="" />
             </div>
           </div>
           <Button title={"Начать"} className="mt-8 mb-6" />
